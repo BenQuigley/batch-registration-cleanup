@@ -1,0 +1,4 @@
+problems with cleanup report: 
+liberal arts class can be null for students with LMSC, even if LAHS-233 is on schedule
+
+

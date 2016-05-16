@@ -35,12 +35,19 @@ else {
             lhumSection = 'LHUM-100-9A';
             break;
     }
-    if (coursenumberactive.join().search(lhumSection)>-1) 
-    {
-        "<div style='color:navy'>"+lhumSection+": done."
-    } 
-    else 
-    {
-        "<div style='color:#990000'>"+lhumSection+": needed."
-    }
+	if (lhumSection)
+	{
+		if (coursenumberactive.join().search(lhumSection)>-1) 
+		{
+			"<div style='color:navy'>"+lhumSection+": done."
+		} 
+		else 
+		{
+			"<div style='color:#990000'>"+lhumSection+": needed."
+		}
+	}
+	else
+	{
+			"<div style='color:navy'> None assigned."
+	}
 }

@@ -12,7 +12,6 @@ else {
     switch (lhumScore)
     {
         case '':
-            lhumSection = "see PSM";
             break;
         case 1:
             lhumSection = 'LHUM-100-1A';

@@ -1,12 +1,12 @@
-if (activeprogram.search('PDM') == 0)
-{
-    "<div style='color:navy'>No LHUM needed (PDM student)."
-}
-else if ( activeprogram.search('TWO') == 0)
-{
-    "<div style='color:navy'>No LHUM needed (TWO student)."
-}
-else {
+//if (activeprogram.search('PDM') == 0)
+//{
+//    "<div style='color:navy'>No LHUM needed (PDM student)."
+//}
+//else if ( activeprogram.search('TWO') == 0)
+//{
+//    "<div style='color:navy'>No LHUM needed (TWO student)."
+//}
+//else {
     var lhumScore = bSttrLhumScore;
     var lhumSection = '';
     switch (lhumScore)
@@ -51,3 +51,12 @@ else {
 			"<div style='color:navy'> None assigned."
 	}
 }
+    if (coursenumberactive.join().search(lhumSection)>-1) 
+    {
+        "<div style='color:navy'>"+lhumSection+": done."
+    } 
+    else 
+    {
+        "<div style='color:#990000'>"+lhumSection+": needed."
+    }
+//}

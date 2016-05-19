@@ -1,45 +1,25 @@
 var mincredits = new Number();
-var electiveString = new String();
-var credits = parseInt(credtermactive[0]);
-var allcourses = transfercourses.concat(bSttrNcCourses).concat(coursenumberactive).sort().join();
-var esl = parseInt(scoremichigan);
-
-if (activeprogram.search('BM4') == 0)
-{
+var credits = new Number();
+var electiveclass = '';
+var electivestring = '';
+var electivenote = '';
+var credits = parseFloat(credtermactive[0]);
+var allcoursesarray = transfercourses.concat(bSttrNcCourses,coursenumberactive);
+var allcourses = allcoursesarray.sort().join()
+var esl = parseFloat(scoremichigan);
+program = typeof activeprogram == 'string'? activeprogram : activeprogram[0]
+if (program.indexOf('BM4') == 0){
     mincredits = 15;
-}
-else if (activeprogram.search('PDM') == 0 || activeprogram.search('TWO') == 0)
-{
+} else if (program.indexOf('PDM') == 0 || program.indexOf('TWO') == 0) {
     mincredits = 12;
+} if (credits >= mincredits) {
+    '<div style="color:navy">Min credits met ('+credits+' taken; '+mincredits+' required).';
+} else if (allcourses.indexOf('MB-101')>-1) {
+    '<div style="color:#990001">Min credits not met ('+credits+' taken; '+mincredits+' required). Add XX-580 (student already has credit for MB-101).';
+} else if (esl >= 0 || esl <= 4) {
+    '<div style="color:#990001">Min credits not met ('+credits+' taken; '+mincredits+' required). Add XX-580 (due to ESL).';
+} else {
+    electiveclass = 'MB-101 (or ISKB-P111 if percussion and PDM)';
+    electivenote = '';
+    '<div style="color:#990001">Min credits not met ('.concat(String(credits),' taken; ',String(mincredits),' required). Add ',electiveclass,'.');
 }
-else 
-{
-    electivestring = "Error - what is this student's program?";
-    mincredits = 0;
-}
-if (credits >= mincredits) 
-{
-    electivestring = "<div style='color:navy'>Min credits met ("+credits+" taken; "+mincredits+" required).";
-}
-else 
-{ // the problem is in here - maybe it couldn't establish a "credits = credtermactive[0]"
-    var electiveclass = "";
-    var electivenote = "";
-    if (allcourses.search("MB-101")>-1)
-    {
-        electiveclass = "XX-580";
-        electivenote = " (because they have credit for MB-101)";
-    }
-    else if (esl >= 0 || esl <= 4) 
-    {
-        electiveclass = "XX-580";
-        electivenote = " (students with ESL scores of "+michigan+" are ineligible for MB-101)";
-    } 
-    else 
-    {
-        electiveclass = "MB-101 (or ISKB-P111 if percussion and PDM)";
-        electivenote = "";
-    }
-    electivestring = "<div style='color:#990000'>Min credits not met ("+credits+" taken; "+mincredits+" required). Add "+electiveclass+electivenote+".";
-}
-electivestring;

@@ -17,7 +17,6 @@ else
     var liberalartsclass = new String();
     switch(scoremichigan)
     {
-        case null:
         case 11:
             var completedcourses = transfercourses.concat(bSttrNcCourses).sort().join();
             if (completedcourses.search("LENG-111") == -1) 
@@ -37,6 +36,7 @@ else
                 liberalartsclass = "LMAS";
             }
             break;
+        case null:
         case 0:
         case 1:
             liberalartsclass = "XX-552";

@@ -10,49 +10,58 @@
 //ENG 4 -- LMAS-230-003 or LMAS-352-003 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111, LENG-201, and LAHS-231
 if (activeprogram.search('PDM') == 0)  
 {
-"<div style='color:navy'> No liberal arts class needed: non-ESL PDM student."
+    "<div style='color:navy'> No liberal arts class needed: non-ESL PDM student."
 }
 else
 {
-    var liberalartsclass = new String();
-    switch(scoremichigan)
+    var possible_courses = new Array();
+    switch (scoremichigan)
     {
         case 11:
             var completedcourses = transfercourses.concat(bSttrNcCourses).sort().join();
             if (completedcourses.search("LENG-111") == -1) 
             {
-                liberalartsclass = "LENG-111";
+                possible_courses.push("LENG-111");
             } 
             else if (completedcourses.search("LENG-201") == -1) 
             {
-                liberalartsclass = "LENG-201";
+                possible_courses.push("LENG-201");
             } 
             else if (completedcourses.search("LAHS") == -1) 
             {
-                liberalartsclass = "LAHS-231";
+                possible_courses.push("LAHS-231");
             } 
             else 
             {
-                liberalartsclass = "LMAS";
+                possible_courses.push("LMAS-230-003");
+                possible_courses.push('LMAS-250-003');
             }
             break;
         case null:
         case 0:
         case 1:
-            liberalartsclass = "XX-552";
+            possible_courses.push("XX-552");
             break;
         case 2:
-            liberalartsclass = "LENG-102";
+            possible_courses.push("LENG-102");
             break;
         case 4:
-            liberalartsclass = "LENG-104";
+            possible_courses.push("LENG-104");
             break;
         case 5:
-            liberalartsclass = "LENG-105";
+            possible_courses.push("LENG-105");
             break;
         case 6:
-            liberalartsclass = "LENG-106";
+            possible_courses.push("LENG-106");
             break;
     }
-    coursenumberandsectionactive.join().search(liberalartsclass)>-1 ? "<div style='color:navy'>"+liberalartsclass+": done." : "<div style='color:#990000'>"+liberalartsclass+": needed.";
+    for (course in possible_courses)
+    {
+        if (coursenumberandsectionactive.join().search(course) > -1)
+        {
+            var course_enrolled = course;
+            "<div style='color:navy'>"+course_enrolled+": done.";
+        }
+    }
+    "<div style='color:#990000'>"+possible_courses.join(' or ')+": needed.";
 }

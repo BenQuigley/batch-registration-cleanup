@@ -1,14 +1,15 @@
-//ESL X -- XX-552 -- Michigan score of 1
-//ESL 1 -- LENG-102 -- Michigan score of 2
-//ESL 2 -- LENG-104 -- Michigan score of 4
-//ESL 3 -- LENG-105 -- Michigan score of 5
-//ESL 4 -- LENG-106 -- Michigan score of 6
-//ELLA student -- Special section of LENG-111 block registered by Benjamin -- Degree student who is a ELLA cohort member (warning message will pop up in XENS)
-//ENG 1 -- LENG-111 -- Degree student with a Michigan score of null or 11
-//ENG 2 -- LENG-201 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111
-//ENG 3 -- LAHS-231 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111 and LENG-201
-//ENG 4 -- LMAS-230-003 or LMAS-352-003 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111, LENG-201, and LAHS-231
-if (activeprogram.search('PDM') == 0)  
+// ESL X -- XX-552 -- Michigan score of blank, 0, or 1
+// ESL 1 -- LENG-102 -- Michigan score of 2
+// ESL 2 -- LENG-104 -- Michigan score of 4
+// ESL 3 -- LENG-105 -- Michigan score of 5
+// ESL 4 -- LENG-106 -- Michigan score of 6
+// ELLA student -- Special section of LENG-111 block registered by Benjamin -- Degree student who is a ELLA cohort member (warning message will pop up in XENS)
+// ENG 1 -- LENG-111 -- Degree student with a Michigan score of null or 11
+// ENG 2 -- LENG-201 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111
+// ENG 3 -- LAHS-231 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111 and LENG-201
+// ENG 4 -- LMAS-230-003 or LMAS-352-003 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111, LENG-201, and LAHS-231
+
+if (activeprogram.search('PDM') == 0 && scoremichigan == 11)
 {
     "<div style='color:navy'> No liberal arts class needed: non-ESL PDM student."
 }

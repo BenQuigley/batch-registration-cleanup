@@ -1,8 +1,11 @@
 var completedcourses = transfercourses.concat(bSttrNcCourses).sort().join();
 var mtecclass = new String();
 var esl = parseInt(scoremichigan);
-
-if (completedcourses.search("MTEC-111") == -1) 
+if (coursenumberactive.join().search('PM-111') > -1)
+{
+    mtecclass = 'PM-111';
+}
+else if (completedcourses.search("MTEC-111") == -1) 
 {
     mtecclass = "MTEC-111";
 } 

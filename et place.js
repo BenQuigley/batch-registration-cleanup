@@ -1,9 +1,3 @@
-//2016SP rules:
-//XX-500	Ear Training score of null
-//ET-111	Ear Training score of 0 to 13
-//ET-112	Ear Training score of 14 to 16
-//ET-211	Ear Training score of 17 to 19
-//ET-212	Ear Training score of 20 to 22
 var etclass = new String();
 switch(scoreet) 
 {

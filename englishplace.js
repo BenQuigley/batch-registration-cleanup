@@ -6,8 +6,8 @@
 // ELLA student -- Special section of LENG-111 block registered by Benjamin -- Degree student who is a ELLA cohort member (warning message will pop up in XENS)
 // ENG 1 -- LENG-111 -- Degree student with a Michigan score of null or 11
 // ENG 2 -- LENG-201 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111
-// ENG 3 -- LAHS-231 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111 and LENG-201
-// ENG 4 -- LMAS-230-003 or LMAS-352-003 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111, LENG-201, and LAHS-231
+// ENG 3 -- possible_courses.push('LAHS-231 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111 and LENG-201
+// ENG 4 -- LMAS-230-003 or LMAS-352-003 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111, LENG-201, and possible_courses.push('LAHS-231
 
 if (activeprogram.search('PDM') == 0 && scoremichigan == 11)
 {
@@ -36,6 +36,11 @@ else
             {
                 possible_courses.push("LMAS-230-003");
                 possible_courses.push('LMAS-250-003');
+                possible_courses.push('LAHS-232');
+                possible_courses.push('LAHS-233-006');
+                possible_courses.push('LAHS-233-001');
+                possible_courses.push('LAHS-233-003');
+                possible_courses.push('LAHS-P234');
             }
             break;
         case null:
@@ -56,13 +61,18 @@ else
             possible_courses.push("LENG-106");
             break;
     }
+    var done = false;
     for (course in possible_courses)
     {
         if (coursenumberandsectionactive.join().search(course) > -1)
         {
-            var course_enrolled = course;
+            var course_enrolled = possible_courses[course];
+            done = true;
             "<div style='color:navy'>"+course_enrolled+": done.";
         }
     }
-    "<div style='color:#990000'>"+possible_courses.join(' or ')+": needed.";
+    if (done == false)
+    {
+        "<div style='color:#990000'>"+possible_courses.join(' or ')+": needed.";
+    }
 }

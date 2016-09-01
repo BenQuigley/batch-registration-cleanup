@@ -21,8 +21,14 @@ switch(scorehr)
     case 4:
         hrclass = "HR-212";
         break;
+    case 98:
+        hrclass = "PW-111-4C";
+        break;
+    case 99:
+        hrclass = "PW-111-1G";
+        break;
 }
-if (coursenumberactive.join().search(hrclass)>-1) 
+if (coursenumberandsectionactive.join().search(hrclass)>-1) 
 {
     "<div style='color:navy'>"+hrclass+": done."
 } 

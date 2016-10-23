@@ -1,39 +1,51 @@
-var completedcourses = transfercourses.concat(bSttrNcCourses).sort().join();
-var mtecclass = new String();
+ear completedcourses = transfercourses.concat(bSttrNcCourses).sort().join();
+var allowable_classes = []
 var esl = parseInt(scoremichigan);
-if (coursenumberactive.join().search('PM-111') > -1)
+if (completedcourses.search("MTEC-111") == -1) 
 {
-    mtecclass = 'PM-111';
-}
-else if (completedcourses.search("MTEC-111") == -1) 
-{
-    mtecclass = "MTEC-111";
-} 
-else if (completedcourses.search("MP-110") == -1) 
-{
-    mtecclass = "MP-110";
-} 
-else if (completedcourses.search("MP-113") == -1) 
-{
-    mtecclass = "MP-113";
-} 
-else if (completedcourses.search("MTEC-214") == -1) 
-{
-    mtecclass = "MTEC-214";
+    allowable_classes.push('MTEC-111');
 } 
 else 
 {
-    mtecclass = "XX-580";
+    if (completedcourses.search("MP-110") == -1)
+    { 
+        allowable_classes.push('MP-110');
+    } 
+    if (completedcourses.search("MP-113") == -1)      
+    {
+        allowable_classes.push('MP-113');
+    } 
+    if (completedcourses.search("MTEC-214") == -1) 
+    {
+        allowable_classes.push('MTEC-214');
+    }
 }
-if (esl >= 0 && esl <= 4) 
+if (allowable_classes == [])
+{
+    allowable_classes.push("XX-570");
+}
+if (esl <= 4) 
 {
     "<div style='color:navy'>None needed (ESL).";
 }
-else if (coursenumberactive.join().search(mtecclass)>-1) 
+else
 {
-    "<div style='color:navy'>"+mtecclass+": done.";
-} 
-else 
-{
-    "<div style='color:#990000'>"+mtecclass+": needed.";
+    done = false;
+    for (i in allowable_classes)
+    {
+        if (coursenumberactive.join().search(allowable_classes[i]) > -1)
+        {
+            done = true
+            course = allowable_classes[i];
+            break;
+        }
+    }
+    if (done)
+    {
+        "<div style='color:navy'>"+course+": done.";
+    }
+    else
+    {
+        "<div style='color:#990000'>"+allowable_classes.join(' or ')+": needed.";
+    }
 }

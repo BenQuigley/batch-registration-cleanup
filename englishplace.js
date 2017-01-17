@@ -31,24 +31,12 @@ else
             else if (completedcourses.search("LAHS-231") == -1) 
             {
                 possible_courses.push("LAHS-231");
-                possible_courses.push("LMAS-230-003");
-                possible_courses.push('LMAS-250-003');
-                possible_courses.push('LAHS-232');
-                possible_courses.push('LAHS-233-006');
-                possible_courses.push('LAHS-233-001');
-                possible_courses.push('LAHS-233-003');
-                possible_courses.push('LAHS-P234');
+                possible_courses.push("LMAS-");
+                possible_courses.push('LAHS-');
             }
             else
             {
-                possible_courses.push("LMAS-230-003");
-                possible_courses.push('LMAS-250-003');
-                possible_courses.push('LAHS-232');
-                possible_courses.push('LAHS-233-006');
-                possible_courses.push('LAHS-233-001');
-                possible_courses.push('LAHS-233-003');
-                possible_courses.push('LAHS-P234');
-                possible_courses.push('XX-551')
+                possible_courses.push('XX-551');
             }
             break;
         case null:

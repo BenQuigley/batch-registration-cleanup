@@ -9,7 +9,12 @@
 // ENG 3 -- possible_courses.push('LAHS-231 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111 and LENG-201
 // ENG 4 -- LMAS-230-003 or LMAS-352-003 -- Degree student with a Michigan score of null or 11 and transfer credit for LENG-111, LENG-201, and possible_courses.push('LAHS-231
 
-if (activeprogram.search('PDM') == 0 && scoremichigan == 11)
+var dip = false
+if (activeprogram.search('PD') == 0 | activeprogram.search('TW') == 0)
+{
+    dip = true
+}
+if (dip == true && scoremichigan == 11)
 {
     "<div style='color:navy'> No liberal arts class needed: non-ESL PDM student."
 }

@@ -1,34 +1,28 @@
-//XX-510	PW score of null or 4
-//PW-111	HR score of 1 and PW score of 0
-//AR-111	PW score of 1
-//AR-112	PW score of 2
-//AR-201	PW score of 3
-
-var pwclass = new String();
+var pwClass = new String();
 switch(scorepw)
 {
     case null:
     case 4:
-        pwclass = "XX-510";
+        pwClass = "XX-510";
         break;
     case 0:
-        pwclass = "PW-111";
+        pwClass = "PW-111";
         break;
     case 1:
-        pwclass = "AR-111";
+        pwClass = "AR-111";
         break;
     case 2:
-        pwclass = "AR-112";
+        pwClass = "AR-112";
         break;
     case 3:
-        pwclass = "AR-201";
+        pwClass = "AR-201";
         break;
 }
-if (coursenumberactive.join().search(pwclass)>-1) 
+if (coursenumberactive.join().search(pwClass)>-1)
 {
-    "<div style='color:navy'>"+pwclass+": done."
+    "<div style='color:navy'>"+pwClass+": done."
 } 
 else 
 {
-    "<div style='color:#990000'>"+pwclass+": needed."
+    "<div style='color:#990000'>"+pwClass+": needed."
 }

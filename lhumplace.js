@@ -1,12 +1,3 @@
-//if (activeprogram.search('PDM') == 0)
-//{
-//    "<div style='color:navy'>No LHUM needed (PDM student)."
-//}
-//else if ( activeprogram.search('TWO') == 0)
-//{
-//    "<div style='color:navy'>No LHUM needed (TWO student)."
-//}
-//else {
 var lhumScore = parseInt(bSttrLhumScore);
 var lhumSection = new String(); 
 switch (lhumScore)

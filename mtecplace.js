@@ -1,28 +1,28 @@
-ear completedcourses = transfercourses.concat(bSttrNcCourses).sort().join();
-var allowable_classes = []
+var completedCourses = transfercourses.concat(bSttrNcCourses).sort().join();
+var allowableCourses = [];
 var esl = parseInt(scoremichigan);
-if (completedcourses.search("MTEC-111") == -1) 
+if (completedCourses.search("MTEC-111") == -1)
 {
-    allowable_classes.push('MTEC-111');
+    allowableCourses.push('MTEC-111');
 } 
 else 
 {
-    if (completedcourses.search("MP-110") == -1)
+    if (completedCourses.search("MP-110") == -1)
     { 
-        allowable_classes.push('MP-110');
+        allowableCourses.push('MP-110');
     } 
-    if (completedcourses.search("MP-113") == -1)      
+    if (completedCourses.search("MP-113") == -1)
     {
-        allowable_classes.push('MP-113');
+        allowableCourses.push('MP-113');
     } 
-    if (completedcourses.search("MTEC-214") == -1) 
+    if (completedCourses.search("MTEC-214") == -1)
     {
-        allowable_classes.push('MTEC-214');
+        allowableCourses.push('MTEC-214');
     }
 }
-if (allowable_classes == [])
+if (allowableCourses == [])
 {
-    allowable_classes.push("XX-570");
+    allowableCourses.push("XX-570");
 }
 if (esl <= 4) 
 {
@@ -31,12 +31,12 @@ if (esl <= 4)
 else
 {
     done = false;
-    for (i in allowable_classes)
+    for (i in allowableCourses)
     {
-        if (coursenumberactive.join().search(allowable_classes[i]) > -1)
+        if (coursenumberactive.join().search(allowableCourses[i]) > -1)
         {
             done = true
-            course = allowable_classes[i];
+            course = allowableCourses[i];
             break;
         }
     }
@@ -46,6 +46,6 @@ else
     }
     else
     {
-        "<div style='color:#990000'>"+allowable_classes.join(' or ')+": needed.";
+        "<div style='color:#990000'>"+allowableCourses.join(' or ')+": needed.";
     }
 }

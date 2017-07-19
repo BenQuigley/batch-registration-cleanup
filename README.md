@@ -3,8 +3,9 @@
 A suite of scripts to be used as Informer scripted columns for a 
 batch registration cleanup report for Berklee College of Music.
 
-## Recent Changes
+## To Use
 
-The Elective Check field was merged into the Min Credits Check field 
-to avoid redundancy, since an elective is what is assigned to students 
-who have their other classes but who still need more credits.
+The production version of this report is hosted in the Berklee intranet at
+its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_US#action=DashboardView&id=2121).
+
+Please send any questions or feedback to bquigley@berklee.edu.

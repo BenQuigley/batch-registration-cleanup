@@ -65,6 +65,6 @@ else
     }
     if (done == false)
     {
-        "<div style='color:#990000'>"+possibleCourses.join(' or ')+": needed.";
+        "<div style='color:#990000'>"+possibleCourses.join(' or ')+": needed.</div>";
     }
 }

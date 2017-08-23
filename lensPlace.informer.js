@@ -1,42 +1,42 @@
-var lhumScore = parseInt(bSttrLhumScore);
-var lhumSection = new String(); 
-switch (lhumScore)
+var lensScore = parseInt(bSttrLhumScore);
+var lensSection = new String(); 
+switch (lensScore)
 {
     case '':
         break;
     case 0:
         break;
     case 1:
-        lhumSection = 'LHUM-100-1A';
+        lensSection = 'LHUM-100-1A';
         break;
     case 2:
-        lhumSection = 'LHUM-100-1B';
+        lensSection = 'LHUM-100-1B';
         break;
     case 3:
-        lhumSection = 'LHUM-100-2A';
+        lensSection = 'LHUM-100-2A';
         break;
     case 4:
-        lhumSection = 'LHUM-100-2B';
+        lensSection = 'LHUM-100-2B';
         break;
     case 5:
-        lhumSection = 'LHUM-100-3A';
+        lensSection = 'LHUM-100-3A';
         break;
     case 6:
-        lhumSection = 'LHUM-100-3B';
+        lensSection = 'LHUM-100-3B';
         break;
     case 7:
-        lhumSection = 'LHUM-100-9A';
+        lensSection = 'LHUM-100-9A';
         break;
 }
-if (lhumSection != '')
+if (lensSection != '')
 {
-    if (coursenumberandsectionactive.join().search(lhumSection)>-1) 
+    if (coursenumberandsectionactive.join().search(lensSection)>-1) 
     {
-        "<div style='color:navy'>"+lhumSection+": done."
+        "<div style='color:navy'>"+lensSection+": done."
     } 
     else 
     {
-        "<div style='color:#990000'>"+lhumSection+": needed."
+        "<div style='color:#990000'>"+lensSection+": needed."
     }
 }
 else

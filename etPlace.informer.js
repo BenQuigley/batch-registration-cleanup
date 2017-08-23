@@ -4,17 +4,17 @@ var rawWriting = bSttrRawWsScore;
 if (scoreet === null) {
     etClass = "XX-500";
 }
-else if (0 <= scoreet <= 13 ) {
-    if (academic === 0 && 0 <= rawWriting <= 40) {
+else if (scoreet >= 0 && scoreet <= 13 ) {
+    if (academic === 0 && rawWriting <= 40) {
         etClass = "ET-110";
     }
-    else if (scoreet <= 6 && academic === 1 && 0 <= rawWriting <= 40) {
+    else if (scoreet <= 6 && academic === 1 && rawWriting <= 40) {
         etClass = "ET-110";
     }
-    else if (scoreet <= 6 && academic === 2 && 0 <= rawWriting <= 20) {
+    else if (scoreet <= 6 && academic === 2 && rawWriting <= 20) {
         etClass = "ET-110";
     }
-    else if (7 <= scoreet <= 13 && academic === 1 && 0 <= rawWriting <= 20) {
+    else if (academic === 1 && rawWriting <= 20) {
         etClass = "ET-110";
     }
     else {

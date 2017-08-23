@@ -4,7 +4,7 @@ var rawWriting = bSttrRawWsScore;
 if (scoreet === null) {
     etClass = "XX-500";
 }
-else if (scoreet >= 0 && scoreet <= 13 ) {
+else if (scoreet >= 0 && scoreet <= 13 && rawWriting != null && academic != null) {
     if (academic === 0 && rawWriting <= 40) {
         etClass = "ET-110";
     }

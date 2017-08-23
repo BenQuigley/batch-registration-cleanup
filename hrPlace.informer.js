@@ -1,5 +1,5 @@
-var hrClass = new String();
-switch(scorehr) 
+var hrClass = "";
+switch(scorehr)
 {
     case null:
         hrClass = "XX-520";
@@ -16,18 +16,15 @@ switch(scorehr)
     case 4:
         hrClass = "HR-212";
         break;
-    case 98:
-        hrClass = "PW-111-4C";
-        break;
-    case 99:
-        hrClass = "PW-111-1G";
+    case 9:
+        hrClass = "PW-110";
         break;
 }
 if (coursenumberandsectionactive.join().search(hrClass)>-1)
 {
     "<div style='color:navy'>"+hrClass+": done."
-} 
-else 
+}
+else
 {
     "<div style='color:#990000'>"+hrClass+": needed."
 }

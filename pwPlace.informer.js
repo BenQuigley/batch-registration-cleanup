@@ -1,22 +1,33 @@
-var pwClass = new String();
-switch(scorepw)
+var pwClass = "";
+switch(scorehr)
 {
-    case null:
-    case 4:
-        pwClass = "XX-510";
-        break;
-    case 0:
-        pwClass = "PW-111";
+    case 9:
+        pwClass = "PW-110";
         break;
     case 1:
-        pwClass = "AR-111";
+        pwClass = "PW-111";
         break;
-    case 2:
-        pwClass = "AR-112";
-        break;
-    case 3:
-        pwClass = "AR-201";
-        break;
+}
+if (pwClass === "")
+{
+    switch(scorepw)
+    {
+        case null:
+            pwClass = "XX-510";
+            break;
+        case 0:
+            pwClass = "PW-111";
+            break;
+        case 1:
+            pwClass = "AR-111";
+            break;
+        case 2:
+            pwClass = "AR-112";
+            break;
+        case 3:
+            pwClass = "AR-201";
+            break;
+    }
 }
 if (coursenumberactive.join().search(pwClass)>-1)
 {

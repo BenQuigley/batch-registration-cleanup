@@ -34,7 +34,7 @@ else if (scoreet <= 22)
 {
     etClass = "ET-212";
 }
-if (coursenumberactive.join().search(etClass)>-1)
+if (coursenumberactive.join().search(etClass) > -1)
 {
     "<div style='color:navy'>"+etClass+": done.";
 } 

@@ -16,7 +16,7 @@ else if (scoreet >= 0 && scoreet <= 13) {
     // are both in the danger zone:
 
     if (academic <= 2 && rawWriting === null) {
-        etClass = "XX-520 (ET-110 candidate; needs ESPA)";
+        etClass = "XX-520";
     }
     else if (academic === 0 && rawWriting <= 40) {
         etClass = "ET-110";

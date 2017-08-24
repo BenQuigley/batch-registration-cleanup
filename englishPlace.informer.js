@@ -1,29 +1,22 @@
-var dip = false
-if (activeprogram.search('PD') == 0 | activeprogram.search('TW') == 0)
-{
-    dip = true
+var diploma = false;
+if (activeprogram.search('PD') === 0 || activeprogram.search('TW') === 0) {
+    diploma = true;
 }
-if (dip == true && scoremichigan == 11)
-{
-    "<div style='color:navy'> No liberal arts class needed: non-ESL PDM student."
+if (diploma === true && scoremichigan === 11) {
+    "<div style='color:navy'> No liberal arts class needed: non-ESL PDM student.";
 }
-else
-{
-    var possibleCourses = new Array();
-    switch (scoremichigan)
-    {
+else {
+    var possibleCourses = [];
+    switch (scoremichigan) {
         case 11:
             var completedCourses = transfercourses.concat(bSttrNcCourses).sort().join();
-            if (completedCourses.search("LENG-111") == -1)
-            {
+            if (completedCourses.search("LENG-111") === -1) {
                 possibleCourses.push("LENG-111");
             } 
-            else if (completedCourses.search("LENG-201") == -1)
-            {
+            else if (completedCourses.search("LENG-201") === -1) {
                 possibleCourses.push("LENG-201");
             } 
-            else if (completedCourses.search("LAHS-231") == -1)
-            {
+            else if (completedCourses.search("LAHS-231") === -1) {
                 possibleCourses.push("LAHS-231");
                 possibleCourses.push("LMAS-");
                 possibleCourses.push('LAHS-');
@@ -63,7 +56,7 @@ else
             break;
         }
     }
-    if (done == false)
+    if (!done)
     {
         "<div style='color:#990000'>"+possibleCourses.join(' or ')+": needed.</div>";
     }

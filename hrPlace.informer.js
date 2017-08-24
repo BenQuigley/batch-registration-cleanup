@@ -20,9 +20,17 @@ switch(scorehr)
         hrClass = "PW-110";
         break;
 }
-if (coursenumberandsectionactive.join().search(hrClass)>-1)
+var section_match = "";
+for (i in coursenumberandsectionactive) {
+    var sec = coursenumberandsectionactive[i];
+    if (sec.indexOf(hrClass) >= 0) {
+        section_match = sec;
+        break;
+    }
+}
+if (section_match)
 {
-    "<div style='color:navy'>"+hrClass+": done."
+    "<div style='color:navy'>"+section_match+": done."
 }
 else
 {

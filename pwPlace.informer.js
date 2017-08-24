@@ -1,6 +1,5 @@
 var pwClass = "";
-switch(scorehr)
-{
+switch(scorehr) {
     case 9:
         pwClass = "PW-110";
         break;
@@ -8,8 +7,7 @@ switch(scorehr)
         pwClass = "PW-111";
         break;
 }
-if (pwClass === "")
-{
+if (pwClass === "") {
     switch(scorepw)
     {
         case null:
@@ -29,9 +27,16 @@ if (pwClass === "")
             break;
     }
 }
-if (coursenumberactive.join().search(pwClass)>-1)
-{
-    "<div style='color:navy'>"+pwClass+": done."
+var section_match = "";
+for (i in coursenumberandsectionactive) {
+    var sec = coursenumberandsectionactive[i];
+    if (sec.indexOf(pwClass) >= 0) {
+        section_match = sec;
+        break;
+    }
+}
+if (section_match) {
+    "<div style='color:navy'>"+section_match+": done."
 } 
 else 
 {

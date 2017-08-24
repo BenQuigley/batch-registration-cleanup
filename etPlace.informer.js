@@ -43,16 +43,23 @@ else if (scoreet <= 16) {
 else if (scoreet <= 19) {
     etClass = "ET-211";
 }
-else if (scoreet <= 22)
-{
+else if (scoreet <= 22) {
     etClass = "ET-212";
 }
 
 // Render the score:
 
-if (coursenumberactive.join().search(etClass) > -1)
-{
-    "<div style='color:navy'>"+etClass+": done.";
+var section_match = "";
+for (i in coursenumberandsectionactive) {
+    var sec = coursenumberandsectionactive[i];
+    if (sec.indexOf(etClass) >= 0) {
+        section_match = sec;
+        break;
+    }
+}
+
+if (section_match) {
+    "<div style='color:navy'>"+section_match+": done.";
 } 
 else 
 {

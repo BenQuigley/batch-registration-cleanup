@@ -1,7 +1,11 @@
-var ensemble = new String();
-if (coursenumberactive.join().search(/EN..-/) == -1 && coursenumberactive.join().search("XX-560") == -1) {
-    ensemble = "<div style='color:#990000'>Ensemble needed: add XX-560.";
+for (i in coursenumberandsectionactive){
+    var sec = coursenumberandsectionactive[i];
+    if (sec.search(/EN..-/) >= 0 || sec.search('XX-560') >= 0) {
+        var section_match = sec;
+    }
+}
+if (section_match) {
+    "<div style='color:navy'>"+section_match+": Done.";
 } else {
-    ensemble = "<div style='color:navy'>Ensemble: Done.";
-}  
-ensemble;
+    "<div style='color:#990000'>Ensemble needed: add XX-560.";
+}

@@ -1,8 +1,6 @@
 var lensScore = Number(bSttrLhumScore);
 var lensSection = new String(); 
-switch (lensScore)
-{
-
+switch (lensScore) {
     case '':
         break;
     case 0:
@@ -269,18 +267,22 @@ switch (lensScore)
         lensSection = 'LENS-P107-C3B';
         break;
 }
-if (lensSection != '')
-{
-    if (coursenumberandsectionactive.join().search(lensSection)>-1) 
-    {
-        "<div style='color:navy'>"+lensSection+": done."
+if (lensSection != '') {
+    var section_match = "";
+    for (i in coursenumberandsectionactive) {
+        var sec = coursenumberandsectionactive[i];
+        if (sec.indexOf(lensSection) >= 0) {
+            section_match = sec;
+            break;
+        }
+    }
+    if (section_match) {
+        "<div style='color:navy'>"+section_match+": done."
     } 
-    else 
-    {
+    else {
         "<div style='color:#990000'>"+lensSection+": needed."
     }
 }
-else
-{
+else {
     "<div style='color:navy'> None assigned."
 }

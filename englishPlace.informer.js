@@ -44,6 +44,7 @@ else {
             possibleCourses.push("LENG-106");
             break;
     }
+<<<<<<< Updated upstream
     var done = false;
     for (i in possibleCourses)
     {
@@ -53,11 +54,26 @@ else {
             var courseEnrolled = course;
             done = true;
             "<div style='color:navy'>"+courseEnrolled+": done.";
+=======
+    var courseEnrolled = "";
+    for (i in possibleCourses) {
+        var course = possibleCourses[i];
+        for (j in coursenumberandsectionactive) {
+            var sec = coursenumberandsectionactive[j];
+            if (sec.indexOf(course) >= 0) {
+                courseEnrolled = sec;
+                break;
+            }
+        }
+        if (courseEnrolled) {
             break;
         }
     }
-    if (!done)
+    if (courseEnrolled)
     {
+        "<div style='color:#1D2D44'>"+courseEnrolled+": done.";
+    }
+    else{
         "<div style='color:#990000'>"+possibleCourses.join(' or ')+": needed.</div>";
     }
 }

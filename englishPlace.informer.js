@@ -44,17 +44,6 @@ else {
             possibleCourses.push("LENG-106");
             break;
     }
-<<<<<<< Updated upstream
-    var done = false;
-    for (i in possibleCourses)
-    {
-        course = possibleCourses[i];
-        if (coursenumberandsectionactive.join().search(course) > -1)
-        {
-            var courseEnrolled = course;
-            done = true;
-            "<div style='color:navy'>"+courseEnrolled+": done.";
-=======
     var courseEnrolled = "";
     for (i in possibleCourses) {
         var course = possibleCourses[i];

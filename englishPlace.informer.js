@@ -12,10 +12,10 @@ else {
             var completedCourses = transfercourses.concat(bSttrNcCourses).sort().join();
             if (completedCourses.search("LENG-111") === -1) {
                 possibleCourses.push("LENG-111");
-            } 
+            }
             else if (completedCourses.search("LENG-201") === -1) {
                 possibleCourses.push("LENG-201");
-            } 
+            }
             else if (completedCourses.search("LAHS-231") === -1) {
                 possibleCourses.push("LAHS-231");
                 possibleCourses.push("LMAS-");
@@ -60,7 +60,7 @@ else {
     }
     if (courseEnrolled)
     {
-        "<div style='color:#1D2D44'>"+courseEnrolled+": done.";
+        "<div style='color:navy'>"+courseEnrolled+": done.";
     }
     else{
         "<div style='color:#990000'>"+possibleCourses.join(' or ')+": needed.</div>";

@@ -36,7 +36,7 @@ its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_
 
 | Criteria                                                | Placement   |
 |:--------------------------------------------------------|:------------|
-| XX-500                                                  | Blank ET score |
+| Blank ET score                                          | XX-500      |
 | ET score of 0-13 and low A&I Acad and PW Writing scores | ET-110      |
 | ET score of 0-13                                        | ET-111      |
 | ET score of 14-16                                       | ET-112      |

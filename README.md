@@ -71,7 +71,7 @@ its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_
 |:------------------------------------------------------------------------------------------|:------------|
 | All students without the minimum required number of credits, with ESL scores 5 or better | MB-101      |
 
-### "LENS" Seminar
+### LENS Seminar
 
 | Criteria            | Placement                                        |
 |:--------------------|:-------------------------------------------------|

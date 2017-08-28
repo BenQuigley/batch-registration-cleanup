@@ -1,6 +1,6 @@
 # Batch Registration Tools
 
-Tools including a registration key, and a suite of Informer
+Tools including a registration key and a suite of Informer
 scripted columns supporting the batch registration process at Berklee College of Music.
 
 ## To Use

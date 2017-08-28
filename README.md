@@ -1,7 +1,7 @@
 # Batch Registration Tools
 
-A suite of scripts to be used as Informer scripted columns for a 
-batch registration cleanup report for Berklee College of Music.
+Tools including a registration key, and a suite of Informer
+scripted columns supporting the batch registration process at Berklee College of Music.
 
 ## To Use
 

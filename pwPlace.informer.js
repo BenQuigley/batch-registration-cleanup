@@ -37,7 +37,7 @@ for (i in coursenumberandsectionactive) {
 }
 if (section_match) {
     "<div style='color:navy'>"+section_match+": done."
-} 
+}
 else 
 {
     "<div style='color:#990000'>"+pwClass+": needed."

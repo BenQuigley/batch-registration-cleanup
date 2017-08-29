@@ -45,17 +45,17 @@ its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_
 
 ### English & Liberal Arts
 
-| Criteria                                                                                               | Placement   |
-|:-------------------------------------------------------------------------------------------------------|:------------|
-| ESL score of 1                                                                                         | XX-552      |
-| ESL score of 2                                                                                         | LENG-102    |
-| ESL score of 4                                                                                         | LENG-104    |
-| ESL score of 5                                                                                         | LENG-105    |
-| ESL score of 6                                                                                         | LENG-106    |
-| ESL score of 11, degree student                                                                        | LENG-111    |
-| ESL score of 11, degree student with transfer credit for LENG-111                                      | LENG-201    |
-| ESL score of 11, degree student with transfer credit for LENG-111 and LENG-201                         | LVIS (any)  |
-| ESL score of 11, degree student with transfer credit for LENG-111, LENG-201, and any LAHS course       | LMAS (any) or XX-551 if no LMAS available |
+| Criteria                                                                                                  | Placement                                 |
+|:----------------------------------------------------------------------------------------------------------|:------------------------------------------|
+| ESL score of 1                                                                                            | XX-552                                    |
+| ESL score of 2                                                                                            | LENG-102                                  |
+| ESL score of 4                                                                                            | LENG-104                                  |
+| ESL score of 5                                                                                            | LENG-105                                  |
+| ESL score of 6                                                                                            | LENG-106                                  |
+| ESL score of 11, degree student                                                                           | LENG-111                                  |
+| ESL score of 11, degree student with transfer credit for LENG-111                                         | LENG-223                                  |
+| ESL score of 11, degree student with transfer credit for LENG-111 and either LENG-201 or LENG-223         | LVIS (any)                                |
+| ESL score of 11, degree student with transfer credit for LENG-111, LENG-201/223, and any LAHS/LVIS course | LMAS (any) or XX-551 if no LMAS available |
 
 ### Music Technology
 

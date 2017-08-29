@@ -1,6 +1,9 @@
 var completedCourses = transfercourses.concat(bSttrNcCourses).sort().join();
 var allowableCourses = [];
 var esl = parseInt(scoremichigan);
+if (coursenumberandsectionactive.join().indexOf('PM-110') >= 0) {
+    "<div style='color:navy'>Student was pre-registered in PM-110 per Bob Mulvey."
+}
 if (completedCourses.search("MTEC-111") === -1) {
     allowableCourses.push('MTEC-111');
 } 

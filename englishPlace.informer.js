@@ -16,13 +16,9 @@ else {
             else if (completedCourses.search("LENG-201") === -1) {
                 possibleCourses.push("LENG-201");
             }
-            else if (completedCourses.search("LAHS-231") === -1) {
-                possibleCourses.push("LAHS-231");
+            else {
+                possibleCourses.push("LVIS-");
                 possibleCourses.push("LMAS-");
-                possibleCourses.push('LAHS-');
-            }
-            else
-            {
                 possibleCourses.push('XX-551');
             }
             break;

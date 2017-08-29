@@ -1,5 +1,5 @@
 var lensScore = Number(bSttrLhumScore);
-var lensSection = new String(); 
+var lensSection = '';
 switch (lensScore) {
     case '':
         break;

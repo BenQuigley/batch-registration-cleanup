@@ -54,9 +54,8 @@ its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_
 | ESL score of 6                                                                                         | LENG-106    |
 | ESL score of 11, degree student                                                                        | LENG-111    |
 | ESL score of 11, degree student with transfer credit for LENG-111                                      | LENG-201    |
-| ESL score of 11, degree student with transfer credit for LENG-111 and LENG-201                         | LAHS (any)  |
-| ESL score of 11, degree student with transfer credit for LENG-111, LENG-201, and any LAHS course       | LMAS (any)  |
-| ESL score of 11, degree student with transfer credit for LENG-111, LENG-201, and any LAHS course       | XX-551      |
+| ESL score of 11, degree student with transfer credit for LENG-111 and LENG-201                         | LVIS (any)  |
+| ESL score of 11, degree student with transfer credit for LENG-111, LENG-201, and any LAHS course       | LMAS (any) or XX-551 if no LMAS available |
 
 ### Music Technology
 

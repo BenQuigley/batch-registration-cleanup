@@ -1,7 +1,12 @@
-var lensScore = Number(bSttrLhumScore);
+var lensScore = bSttrLhumScore;
 var lensSection = '';
 switch (lensScore) {
+    case '':
+    case null:
+        lensSection = 'unassigned';
+        break;
     case 0:
+        lensSection = 'none';
         break;
     case 1:
         lensSection = 'LENS-P101-1A';
@@ -265,22 +270,16 @@ switch (lensScore) {
         lensSection = 'LENS-P107-C3B';
         break;
 }
-if (lensSection != '') {
-    var section_match = "";
-    for (i in coursenumberandsectionactive) {
-        var sec = coursenumberandsectionactive[i];
-        if (sec.indexOf(lensSection) >= 0) {
-            section_match = sec;
-            break;
-        }
-    }
-    if (section_match) {
-        "<div style='color:navy'>"+section_match+": done."
-    } 
-    else {
-        "<div style='color:#990000'>"+lensSection+": needed."
-    }
+var section_match = coursenumberandsectionactive.join().indexOf(lensSection) >= 0;
+if (lensSection === 'unassigned') {
+    "<div style='color:#990000'>Assignment needed: contact Liberal Arts chair.";
+}
+else if (lensSection === 'none') {
+    "<div style='color:navy'> None assigned.";
+}
+else if (section_match) {
+    "<div style='color:navy'>"+lensSection+": done.";
 }
 else {
-    "<div style='color:navy'> None assigned."
+    "<div style='color:#990000'>"+lensSection+": needed.";
 }

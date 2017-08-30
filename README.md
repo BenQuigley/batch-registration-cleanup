@@ -47,7 +47,7 @@ its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_
 
 | Criteria                                                                                                  | Placement                                 |
 |:----------------------------------------------------------------------------------------------------------|:------------------------------------------|
-| ESL score of 1                                                                                            | XX-552                                    |
+| ESL score of 0-1                                                                                            | XX-552                                    |
 | ESL score of 2                                                                                            | LENG-102                                  |
 | ESL score of 4                                                                                            | LENG-104                                  |
 | ESL score of 5                                                                                            | LENG-105                                  |

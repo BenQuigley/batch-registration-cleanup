@@ -269,6 +269,12 @@ switch (lensScore) {
     case 87:
         lensSection = 'LENS-P107-C3B';
         break;
+    case 88:
+        lensSection = "LENS-P103-5E";
+        break;
+    case 89:
+        lensSection = "LENS-P101-C9A";
+        break;
 }
 var section_match = coursenumberandsectionactive.join().indexOf(lensSection) >= 0;
 if (lensSection === 'unassigned') {

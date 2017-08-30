@@ -3,7 +3,7 @@ switch(scorehr) {
     case 9:
         pwClass = "PW-110";
         break;
-    case 1:
+    case 0:
         pwClass = "PW-111";
         break;
 }

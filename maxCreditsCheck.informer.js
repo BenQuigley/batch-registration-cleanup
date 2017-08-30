@@ -1,11 +1,11 @@
 var credits = parseInt(credtermactive[0]);
 var esl = parseInt(scoremichigan);
-if (activeprogram.indexOf('BM4') == 0) 
+if (activeprogram.indexOf('BM4') === 0)
 {
     var regMax = 16;
     var eslMax = 17;
 } 
-else if (activeprogram.indexOf('PDM') == 0 || activeprogram.indexOf('TWO') == 0) 
+else if (activeprogram.indexOf('PDM') === 0 || activeprogram.indexOf('TWO') === 0)
 {
     var regMax = 13;
     var eslMax = 16;

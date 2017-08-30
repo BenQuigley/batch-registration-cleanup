@@ -1,8 +1,6 @@
 var lensScore = Number(bSttrLhumScore);
 var lensSection = '';
 switch (lensScore) {
-    case '':
-        break;
     case 0:
         break;
     case 1:

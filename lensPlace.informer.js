@@ -1,4 +1,4 @@
-var lensScore = Number(bSttrLhumScore);
+var lensScore = bSttrLhumScore;
 var lensSection = '';
 switch (lensScore) {
     case '':

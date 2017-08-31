@@ -13,8 +13,8 @@ else {
             if (completedCourses.search("LENG-111") === -1) {
                 possibleCourses.push("LENG-111");
             }
-            else if (completedCourses.search("LENG-201") === -1) {
-                possibleCourses.push("LENG-201");
+            else if (completedCourses.search("LENG-201") === -1 && completedCourses.search("LENG-223") === -1) {
+                possibleCourses.push("LENG-223");
             }
             else {
                 possibleCourses.push("LVIS-");

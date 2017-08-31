@@ -1,20 +1,20 @@
 var completedCourses = transfercourses.concat(bSttrNcCourses).sort().join();
 var allowableCourses = [];
 var esl = parseInt(scoremichigan);
-if (coursenumberandsectionactive.join().indexOf('PM-110') >= 0) {
-    "<div style='color:navy'>Student was pre-registered in PM-110 per Bob Mulvey."
+if (coursenumberandsectionactive.join().indexOf('PM-111') >= 0) {
+    "<div style='color:navy'>Student was pre-registered in PM-111 per Bob Mulvey."
 }
 if (completedCourses.search("MTEC-111") === -1) {
     allowableCourses.push('MTEC-111');
-} 
-else 
+} g
+else
 {
     if (completedCourses.search("MP-110") === -1) {
         allowableCourses.push('MP-110');
-    } 
+    }
     if (completedCourses.search("MP-113") === -1) {
         allowableCourses.push('MP-113');
-    } 
+    }
     if (completedCourses.search("MTEC-214") === -1) {
         allowableCourses.push('MTEC-214');
     }
@@ -22,7 +22,7 @@ else
 if (allowableCourses === []) {
     allowableCourses.push("XX-570");
 }
-if (esl <= 4) {
+if (esl >= 2 && esl <= 4) {
     "<div style='color:navy'>None needed (ESL).";
 }
 else {

@@ -9,12 +9,13 @@ var duplicateCourses = [];
 
 // For each LAHS (deprecated history code) credit, also consider
 // its LVIS (new code) equivalent.
+// For LENG-201 credits, also consider LENG-223 (its new equivalent).
 for (var i in completedCourses) {
     var completedCourse = completedCourses[i];
     if (completedCourse.indexOf("LAHS") === 0) {
         completedCourses.push(completedCourse.replace("LAHS", "LVIS"));
     }
-    else if (completedCourse == 'LENG-201') {
+    else if (completedCourse === 'LENG-201') {
         completedCourses.push('LENG-223');
     }
 }

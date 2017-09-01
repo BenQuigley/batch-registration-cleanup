@@ -6,7 +6,6 @@
 
 var completedCourses = transfercourses.concat(bSttrNcCourses).sort();
 var duplicateCourses = [];
-var completedCoursesString = completedCourses.join();
 
 // For each LAHS (deprecated history code) credit, also consider
 // its LVIS (new code) equivalent.

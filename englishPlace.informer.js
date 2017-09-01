@@ -1,3 +1,8 @@
+/*
+ Returns the ESL class required for the student, or liberal arts class
+ for Bachelors students if not ESL.
+ */
+
 var diploma = false;
 if (activeprogram.search('PD') === 0 || activeprogram.search('TW') === 0) {
     diploma = true;

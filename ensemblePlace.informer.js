@@ -1,3 +1,7 @@
+/*
+ Checks whether the student is in an ensemble or the ensemble placeholder.
+ */
+
 for (i in coursenumberandsectionactive){
     var sec = coursenumberandsectionactive[i];
     if (sec.search(/EN..-/) >= 0 || sec.search('XX-560') >= 0) {

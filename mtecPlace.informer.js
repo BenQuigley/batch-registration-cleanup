@@ -1,3 +1,9 @@
+/*
+ Returns the Music Technology course required for the student,
+ usually MTEC-111, but PM-111 if the student was pre-registered, and
+ one of three alternatives if the student tested out (credit by exam).
+ */
+
 var completedCourses = transfercourses.concat(bSttrNcCourses).sort().join();
 var allowableCourses = [];
 var esl = parseInt(scoremichigan);

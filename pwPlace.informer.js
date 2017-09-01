@@ -1,3 +1,11 @@
+/*
+ Returns the Professional Writing class required for the student,
+ including higher-level classes for students with higher ESPA
+ scores.
+
+ This placement is partly based on the student's Harmony ESPA score.
+ */
+
 var pwClass = "";
 switch(scorehr) {
     case 9:

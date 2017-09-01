@@ -1,32 +1,30 @@
-var credits = parseInt(credtermactive[0]);
-var esl = parseInt(scoremichigan);
-if (activeprogram.indexOf('BM4') === 0)
-{
+/*
+ Evaluates whether the student is over the maximum number of credits.
+ Note that ESL students have a higher max to accommodate their classes.
+ */
+
+var credits = Number(credtermactive[0]);
+var esl = Number(scoremichigan);
+if (activeprogram.indexOf('BM4') === 0) {
     var regMax = 16;
     var eslMax = 17;
 } 
-else if (activeprogram.indexOf('PDM') === 0 || activeprogram.indexOf('TWO') === 0)
-{
+else if (activeprogram.indexOf('PDM') === 0 || activeprogram.indexOf('TWO') === 0) {
     var regMax = 13;
     var eslMax = 16;
 }
-if (esl >= 2 && esl <= 10) 
-{
+if (esl >= 2 && esl <= 10) {
     var maxCredits = new Integer(eslMax);
 } 
-else if (coursenumberactive.indexOf("XX-552") > -1) 
-{
+else if (coursenumberactive.indexOf("XX-552") > -1) {
     maxCredits = new Integer(eslMax);
 } 
-else 
-{
+else {
     maxCredits = new Integer(regMax);
 }
-if (credits > maxCredits)
-{
+if (credits > maxCredits) {
     "<div style='color:#990000'>Max credits exceeded ("+credits+" taken; "+maxCredits+" allowed)."
 } 
-else 
-{
+else {
     "<div style='color:navy'>Max credits not exceeded ("+credits+" taken; "+maxCredits+" allowed).";
 }

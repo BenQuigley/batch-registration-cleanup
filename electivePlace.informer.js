@@ -1,3 +1,8 @@
+/*
+ Evaluates whether the student meets the minimum number of credits,
+ and suggests an alternative if they do not.
+ */
+
 var minCredits = new Integer();
 var electiveClass = '';
 var electiveNote = '';

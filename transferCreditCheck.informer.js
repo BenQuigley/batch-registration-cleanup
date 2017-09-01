@@ -1,3 +1,9 @@
+/*
+ Compares the student's current schedule of courses to their
+ transfer and credit-by-exam courses, and complains about
+ any currently enrolled courses that are redundant.
+ */
+
 var completedCourses = transfercourses.concat(bSttrNcCourses).sort().join();
 var duplicateCourses = [];
 for (i in coursenumberactive) 

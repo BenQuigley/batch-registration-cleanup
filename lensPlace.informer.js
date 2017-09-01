@@ -1,3 +1,8 @@
+/*
+ Returns the correct Liberal Arts Entering Ensemble for the student
+ based on a straight lookup from the system values.
+ */
+
 var lensScore = bSttrLhumScore;
 var lensSection = '';
 switch (lensScore) {
@@ -277,6 +282,8 @@ switch (lensScore) {
         break;
 }
 var section_match = coursenumberandsectionactive.join().indexOf(lensSection) >= 0;
+
+// Todo: implement XX-553 as a placeholder if Liberal Arts prefers.
 if (lensSection === 'unassigned') {
     "<div style='color:#990000'>Assignment needed: contact Liberal Arts chair.";
 }

@@ -1,3 +1,9 @@
+/*
+ Returns the Harmony class required for the student,
+ including higher-level classes for students with higher ESPA
+ scores.
+ */
+
 var hrClass = "";
 switch(scorehr)
 {

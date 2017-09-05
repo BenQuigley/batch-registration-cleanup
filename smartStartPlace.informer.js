@@ -28,14 +28,14 @@ if (missingScores.length > 0)
     result = "Missing scores:\n"+missingScores.join('\n');
 }
 
-// Handle eligibility for PW SmartStart course.
+// Apply the criteria for eligibility for SmartStart.
 else if (hrScore === 9) {
     result = 'True';
 }
-else if (academic === 2 && rawHr1Score <= 10 && etScore <= 6 && rawWriting <= 10) {
+else if (academic === 2 && (rawHr1Score <= 10 || etScore <= 6 || rawWriting <= 10)) {
     result = "True";
 }
-else if (academic <= 1 && rawHr1Score <= 20 && etScore <= 13 && rawWriting <= 40) {
+else if (academic <= 1 && (rawHr1Score <= 20 || etScore <= 13 || rawWriting <= 40)) {
     result = "True";
 }
 else {

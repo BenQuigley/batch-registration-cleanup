@@ -74,7 +74,7 @@ its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_
 
 | Criteria            | Placement                                        |
 |:--------------------|:-------------------------------------------------|
-| Program of BM4.UNDL | LENS section assigned by Liberal Arts Department |
+| All students except PDM with >20 transfer credits | Course indicated in student survey choices: LENS.FIRST, LENS.SEC, LENS.THIRD |
 
 ### Private Instruction
 

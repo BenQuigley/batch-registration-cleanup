@@ -3,7 +3,6 @@
  including higher-level classes for students with higher ESPA
  scores.
  */
-
 var etClass = "";
 var academic = scoreaiacademic;
 var rawWriting = bSttrRawWsScore;

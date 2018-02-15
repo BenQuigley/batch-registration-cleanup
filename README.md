@@ -87,7 +87,3 @@ its [dashboard page](https://wbsprd018.berklee.edu:448/informer-live/?locale=en_
 | Criteria                     | Placement                                               |
 |:-----------------------------|:--------------------------------------------------------|
 | All students                 | EN class or XX-560 registered by batch reg project team |
-
-## Feedback
-
-Please send any questions or feedback to bquigley@berklee.edu.
